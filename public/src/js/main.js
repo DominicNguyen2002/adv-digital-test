@@ -1,7 +1,7 @@
 $(function () {
-  $("#header").load("/public/src/components/header/header.html");
-  $("#footer").load("/public/src/components/footer/footer.html");
-  $("#outlet").load("/public/src/pages/home/home.html");
+  $("#header").load("/src/components/header/header.html");
+  $("#footer").load("/src/components/footer/footer.html");
+  $("#outlet").load("/src/pages/home/home.html");
 });
 
 function getCurrentDate() {
