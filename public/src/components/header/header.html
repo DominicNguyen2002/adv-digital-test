@@ -10,7 +10,7 @@
             <a class="mr-4 text-white hover-text-shadow hover-none-underline" href="#">LỊCH SỬ THƯƠNG HIỆU</a>
         </li>
         <li class="active-nav active-nav-product">
-            <a class="mr-4 text-white hover-text-shadow hover-none-underline nav-product" href="product">SẢN PHẨM</a>
+            <a class="mr-4 text-white hover-text-shadow hover-none-underline nav-product" href="/src/pages/product/product.html">SẢN PHẨM</a>
         </li>
         <li class="active-nav">
             <a class="mr-4 text-white hover-text-shadow hover-none-underline" href="#">TƯ VẤN</a>
@@ -127,9 +127,9 @@
                 $(".hidden-product").removeClass("active-hidden");
             }
         );
-        $(".nav-product").on("click", function (event) {
-            event.preventDefault();
-            $("#outlet").load("/src/pages/product/index.html");
-        });
+        // $(".nav-product").on("click", function (event) {
+        //     event.preventDefault();
+        //     $("#outlet").load("/src/pages/product/index.html");
+        // });
     });
 </script>

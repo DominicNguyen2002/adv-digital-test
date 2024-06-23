@@ -265,7 +265,7 @@ footer .branch-2 {
     background-color: #eeeeee;
     padding: 10px;
     display: none;
-    position: absolute;
+    position: fixed;
     top: 60px;
     left: 20vw;
     z-index: 2000;

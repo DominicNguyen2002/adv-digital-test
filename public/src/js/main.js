@@ -4,6 +4,14 @@ $(function () {
   $("#outlet").load("/src/pages/home/home.html");
 });
 
+$("#slider").load("/src/components/slider/slider.html");
+$(document).ready(function () {
+  $(".chip").click(function () {
+    $(".chip").removeClass("active-chip");
+    $(this).addClass("active-chip");
+  });
+});
+
 function getCurrentDate() {
   const daysOfWeek = [
     "Chủ Nhật",
