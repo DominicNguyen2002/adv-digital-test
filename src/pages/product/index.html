@@ -1,0 +1,84 @@
+<container>
+    <div id="slider"></div>
+    <div class="wraper">
+        <button class="chip active-chip">Chống nắng</button>
+        <button class="chip">Dưỡng trắng</button>
+        <button class="chip">Dưỡng ẩm</button>
+        <button class="chip">Dưỡng thể</button>
+        <button class="chip">Nâng tông</button>
+        <button class="chip">Ngừa mụn</button>
+        <button class="chip">Kiềm dầu</button>
+        <button class="chip">Vật lý</button>
+        <button class="chip">Cho da nhạy cảm</button>
+        <button class="chip">Trẻ em</button>
+        <button class="chip">Ngừa lão hóa</button>
+        <button class="chip">Cho các hoạt động ngoài trời</button>
+    </div>
+    <div class="view-product-container">
+        <div class="view-product-item">
+            <img src="/src/assets/image/San-pham/Nexta_1.png" alt="">
+            <p>Sữa serum chống nắng Skin Aqua Nexta</p>
+        </div>
+        <div class="view-product-item">
+            <img src="/src/assets/image/San-pham/Nexta_2.png" alt="">
+            <p>Sữa serum chống nắng Skin Aqua Nexta</p>
+        </div>
+        <div class="view-product-item">
+            <img src="/src/assets/image/San-pham/Sunplay_1.png" alt="">
+            <p>Sữa chống nắng vật lý bảo vệ da giảm dầu SPF50+, PA++++
+        </div>
+        <div class="view-product-item">
+            <img src="/src/assets/image/San-pham/Sunplay_2.png" alt="">
+            <p>Sữa chống nắng vật lý bảo vệ da giảm dầu SPF50+, PA++++
+        </div>
+        <div class="view-product-item">
+            <img src="/src/assets/image/San-pham/Sunplay_3.png" alt="">
+            <p>Sữa chống nắng vật lý bảo vệ da giảm dầu SPF50+, PA++++
+        </div>
+        <div class="view-product-item">
+            <img src="/src/assets/image/San-pham/Sunplay_4.png" alt="">
+            <p>Sữa chống nắng vật lý bảo vệ da giảm dầu SPF50+, PA++++
+        </div>
+        <div class="view-product-item">
+            <img src="/src/assets/image/San-pham/SKA_1.png" alt="">
+            <p>Sữa chống nắng vật lý bảo vệ da giảm dầu SPF50+, PA++++
+        </div>
+        <div class="view-product-item">
+            <img src="/src/assets/image/San-pham/SKA_2.png" alt="">
+            <p>Sữa chống nắng vật lý bảo vệ da giảm dầu SPF50+, PA++++
+        </div>
+        <div class="view-product-item">
+            <img src="/src/assets/image/San-pham/SKA_3.png" alt="">
+            <p>Sữa chống nắng vật lý bảo vệ da giảm dầu SPF50+, PA++++
+        </div>
+        <div class="view-product-item">
+            <img src="/src/assets/image/San-pham/SKA_4.png" alt="">
+            <p>Sữa chống nắng vật lý bảo vệ da giảm dầu SPF50+, PA++++
+        </div>
+        <div class="view-product-item">
+            <img src="/src/assets/image/San-pham/Sunplay_1.png" alt="">
+            <p>Sữa chống nắng vật lý bảo vệ da giảm dầu SPF50+, PA++++
+        </div>
+        <div class="view-product-item">
+            <img src="/src/assets/image/San-pham/Sunplay_2.png" alt="">
+            <p>Sữa chống nắng vật lý bảo vệ da giảm dầu SPF50+, PA++++
+        </div>
+        <div class="view-product-item">
+            <img src="/src/assets/image/San-pham/Sunplay_3.png" alt="">
+            <p>Sữa chống nắng vật lý bảo vệ da giảm dầu SPF50+, PA++++
+        </div>
+        <div class="view-product-item">
+            <img src="/src/assets/image/San-pham/Sunplay_4.png" alt="">
+            <p>Sữa chống nắng vật lý bảo vệ da giảm dầu SPF50+, PA++++
+        </div>
+    </div>
+</container>
+<script>
+    $("#slider").load("/src/components/slider/index.html");
+    $(document).ready(function () {
+        $(".chip").click(function () {
+            $(".chip").removeClass("active-chip");
+            $(this).addClass("active-chip");
+        });
+    });
+</script>

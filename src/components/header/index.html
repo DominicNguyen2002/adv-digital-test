@@ -1,0 +1,135 @@
+<header class="bg-header w-100 text-white d-flex justify-content-between align-items-center px-3" style="height: 60px;">
+    <button type="button" class="btn btn-link text-white p-1 focus-no-outline">
+        <i class="fa-solid fa-bars fa-2x"></i>
+    </button>
+    <ul class="d-flex justify-content-between align-items-center list-unstyled mb-0">
+        <li class="active-nav">
+            <a class="mr-4 text-white hover-text-shadow hover-none-underline" href="#">TRANG CHỦ</a>
+        </li>
+        <li class="active-nav">
+            <a class="mr-4 text-white hover-text-shadow hover-none-underline" href="#">LỊCH SỬ THƯƠNG HIỆU</a>
+        </li>
+        <li class="active-nav active-nav-product">
+            <a class="mr-4 text-white hover-text-shadow hover-none-underline nav-product" href="product">SẢN PHẨM</a>
+        </li>
+        <li class="active-nav">
+            <a class="mr-4 text-white hover-text-shadow hover-none-underline" href="#">TƯ VẤN</a>
+        </li>
+        <li class="active-nav">
+            <a class="mr-4 text-white hover-text-shadow hover-none-underline" href="#">THÔNG ĐIỆP</a>
+        </li>
+        <li class="active-nav">
+            <a class="mr-4 text-white hover-text-shadow hover-none-underline" href="#">LIÊN HỆ</a>
+        </li>
+    </ul>
+    <form class="d-flex align-items-center border border-white rounded-pill px-3 py-1"
+        style="width: 300px; height: 40px;" onsubmit="return false;">
+        <input class="form-control border-0 bg-transparent text-white placeholder-white focus-no-outline" type="text"
+            placeholder="Tìm kiếm..." aria-label="Search">
+        <button type="submit" class="btn btn-link p-0 focus-no-outline">
+            <i class="fa fa-search search-icon text-white"></i>
+        </button>
+    </form>
+</header>
+
+<container class="hidden-product">
+    <div class="hidden-product-group hidden-product-group-1">
+        <p class="hidden-item-title">Sản phẩm bán chạy</p>
+        <div class="hidden-item-container">
+            <div class="hidden-item">
+                <div>
+                    <h5>SKIN AQUA BEST CHOISE</h5>
+                    <p>Sữa chống nắng 2X, kiềm dầu 12h
+                        <br />
+                        Sữa chống nắng vật lý bảo vệ da giảm dầu SPF50+, PA++++
+                    </p>
+                </div>
+                <img src="/src/assets/image/San-pham/SKA_1.png" alt="">
+            </div>
+            <div class="hidden-item">
+                <div>
+                    <h5>SUN PLAY BEST CHOISE</h5>
+                    <p>Sữa chống nắng 2X, kiềm dầu 12h
+                        <br />
+                        Sữa chống nắng vật lý bảo vệ da giảm dầu SPF50+, PA++++
+                    </p>
+                </div>
+                <img src="/src/assets/image/San-pham/Sunplay_1.png" alt="">
+            </div>
+            <div class="hidden-item">
+                <div>
+                    <h5>TONE UP BEST CHOISE</h5>
+                    <p>Sữa chống nắng 2X, kiềm dầu 12h
+                        <br />
+                        Sữa chống nắng vật lý bảo vệ da giảm dầu SPF50+, PA++++
+                    </p>
+                </div>
+                <img src="/src/assets/image/San-pham/TU_1.png" alt="">
+            </div>
+            <div class="hidden-item">
+                <div>
+                    <h5>NEXTA BEST CHOISE</h5>
+                    <p>Sữa chống nắng 2X, kiềm dầu 12h
+                        <br />
+                        Sữa chống nắng vật lý bảo vệ da giảm dầu SPF50+, PA++++
+                    </p>
+                </div>
+                <img src="/src/assets/image/San-pham/Nexta_1.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="hidden-product-group hidden-product-group-1">
+        <p class="hidden-item-title">
+            Sản phẩm mới
+        </p>
+        <div class="hidden-item-container">
+            <div class="hidden-item">
+                <div>
+                    <h5>NEW SUNSCREEN 1</h5>
+                    <p>COMMING SOON</p>
+                </div>
+            </div>
+            <div class="hidden-item">
+                <div>
+                    <h5>NEW SUNSCREEN 2</h5>
+                    <p>COMMING SOON</p>
+                </div>
+            </div>
+            <div class="hidden-item">
+                <div>
+                    <h5>NEW SUNSCREEN 3</h5>
+                    <p>COMMING SOON</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hidden-product-group hidden-product-group-2">
+        <p class="hidden-item-title">Dòng sản phẩm</p>
+        <ul>
+            <li>SUNPLAY</li>
+            <li>TONEUP</li>
+            <li>SKIN AQUA</li>
+            <li>NEXTA</li>
+        </ul>
+    </div>
+</container>
+<script>
+    $(document).ready(function () {
+        $(".active-nav-product").hover(function () {
+            $(".hidden-product").addClass("active-hidden");
+        });
+
+        $(".hidden-product").hover(
+            function () {
+                $(".hidden-product").addClass("active-hidden");
+            },
+            function () {
+                $(".hidden-product").removeClass("active-hidden");
+            }
+        );
+        $(".nav-product").on("click", function (event) {
+            event.preventDefault();
+            $("#outlet").load("/src/pages/product/index.html");
+        });
+    });
+</script>

@@ -1,0 +1,67 @@
+<container class="part">
+    <img src="/src/assets/image/Body-Trang-chu/S2_Sunplay_BG.png" alt="">
+    <div class="widget">
+        <p>Chỉ số UV Index hôm nay</p>
+        <p id="dateDisplay-3"></p>
+        <div class="dropdown">
+            <button id="selected-3" class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                HỒ CHÍ MINH
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu">
+                <button class="dropdown-item dropdown-item-3" type="button">HỒ CHÍ MINH</button>
+                <button class="dropdown-item dropdown-item-3" type="button">HÀ NỘI</button>
+                <button class="dropdown-item dropdown-item-3" type="button">CẦN THƠ</button>
+                <button class="dropdown-item dropdown-item-3" type="button">ĐÀ NẴNG</button>
+                <button class="dropdown-item dropdown-item-3" type="button">HẢI PHÒNG</button>
+                <button class="dropdown-item dropdown-item-3" type="button">BIÊN HÒA</button>
+                <button class="dropdown-item dropdown-item-3" type="button">NHA TRANG</button>
+                <button class="dropdown-item dropdown-item-3" type="button">BÌNH DƯƠNG</button>
+                <button class="dropdown-item dropdown-item-3" type="button">BÀ RỊA VŨNG TÀU</button>
+                <button class="dropdown-item dropdown-item-3" type="button">HUẾ</button>
+            </div>
+        </div>
+        <div class="widget-cel">
+            <h2>12</h2>
+            <p>Buộc phải chống nắng</p>
+        </div>
+    </div>
+    <div class="widget-bottom">
+        <div class="widget-bottom-content">
+            <h5>Ngừa đen sạm vượt trội khi vận động nhiều giờ ngoài trời liền</h5>
+            <p>Chống nắng cực mạnh, khuấy đảo mùa hè</p>
+        </div>
+        <div class="slider-product">
+            <div class="slider-item">
+                <img src="/src/assets/image/San-pham/Sunplay_1.png" alt="Slide-1">
+                <p>Sữa chống nắng vật lý bảo vệ da giảm dầu SPF50+, PA++++
+            </div>
+            <div class="slider-item">
+                <img src="/src/assets/image/San-pham/Sunplay_2.png" alt="Slide-1">
+                <p>Sữa chống nắng vật lý bảo vệ da giảm dầu SPF50+, PA++++
+            </div>
+            <div class="slider-item">
+                <img src="/src/assets/image/San-pham/Sunplay_3.png" alt="Slide-1">
+                <p>Sữa chống nắng vật lý bảo vệ da giảm dầu SPF50+, PA++++
+            </div>
+            <div class="slider-item">
+                <img src="/src/assets/image/San-pham/Sunplay_4.png" alt="Slide-1">
+                <p>Sữa chống nắng vật lý bảo vệ da giảm dầu SPF50+, PA++++
+            </div>
+        </div>
+    </div>
+</container>
+
+<script>
+    const dateDisplay3 = document.getElementById('dateDisplay-3');
+    dateDisplay3.textContent = getCurrentDate();
+
+    var dropdownItems = document.querySelectorAll('.dropdown-item-3');
+    dropdownItems.forEach(function (item) {
+        item.addEventListener('click', function () {
+            var selected = item.textContent.trim();
+
+            document.getElementById('selected-3').textContent = selected;
+        });
+    });
+</script>

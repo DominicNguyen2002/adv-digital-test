@@ -1,0 +1,68 @@
+<container class="part">
+    <img src="/src/assets/image/Body-Trang-chu/S2_ToneUp_BG.png" alt="">
+    <div class="widget">
+        <p>Chỉ số UV Index hôm nay</p>
+        <p id="dateDisplay-2"></p>
+        <div class="dropdown">
+            <button id="selected-2" class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                HỒ CHÍ MINH
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu">
+                <button class="dropdown-item dropdown-item-2" type="button">HỒ CHÍ MINH</button>
+                <button class="dropdown-item dropdown-item-2" type="button">HÀ NỘI</button>
+                <button class="dropdown-item dropdown-item-2" type="button">CẦN THƠ</button>
+                <button class="dropdown-item dropdown-item-2" type="button">ĐÀ NẴNG</button>
+                <button class="dropdown-item dropdown-item-2" type="button">HẢI PHÒNG</button>
+                <button class="dropdown-item dropdown-item-2" type="button">BIÊN HÒA</button>
+                <button class="dropdown-item dropdown-item-2" type="button">NHA TRANG</button>
+                <button class="dropdown-item dropdown-item-2" type="button">BÌNH DƯƠNG</button>
+                <button class="dropdown-item dropdown-item-2" type="button">BÀ RỊA VŨNG TÀU</button>
+                <button class="dropdown-item dropdown-item-2" type="button">HUẾ</button>
+            </div>
+        </div>
+        <div class="widget-cel">
+            <h2>12</h2>
+            <p>Buộc phải chống nắng</p>
+        </div>
+    </div>
+    <div class="widget-bottom">
+        <div class="widget-bottom-content">
+            <h5>Chống nắng tối đa, duy nhất trên thị trường với 4 sắc kem,hiệu chỉnh mọi tông da</h5>
+            <p>Kháng UV phổ rộng hiệu chỉnh mọi tông da</p>
+        </div>
+        <div class="slider-product">
+            <div class="slider-item">
+                <img src="/src/assets/image/San-pham/SKA_1.png" alt="Slide-1">
+                <p>Sữa chống nắng vật lý bảo vệ da giảm dầu SPF50+, PA++++
+            </div>
+            <div class="slider-item">
+                <img src="/src/assets/image/San-pham/SKA_2.png" alt="Slide-1">
+                <p>Sữa chống nắng vật lý bảo vệ da giảm dầu SPF50+, PA++++
+            </div>
+            <div class="slider-item">
+                <img src="/src/assets/image/San-pham/SKA_3.png" alt="Slide-1">
+                <p>Sữa chống nắng vật lý bảo vệ da giảm dầu SPF50+, PA++++
+            </div>
+            <div class="slider-item">
+                <img src="/src/assets/image/San-pham/SKA_4.png" alt="Slide-1">
+                <p>Sữa chống nắng vật lý bảo vệ da giảm dầu SPF50+, PA++++
+            </div>
+        </div>
+    </div>
+</container>
+
+<script>
+    const dateDisplay2 = document.getElementById('dateDisplay-2');
+
+    dateDisplay2.textContent = getCurrentDate();
+
+    var dropdownItems = document.querySelectorAll('.dropdown-item-2');
+    dropdownItems.forEach(function (item) {
+        item.addEventListener('click', function () {
+            var selected = item.textContent.trim();
+
+            document.getElementById('selected-2').textContent = selected;
+        });
+    });
+</script>
